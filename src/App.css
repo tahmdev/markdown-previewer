@@ -12,7 +12,6 @@ body, html {
 
 #editor-container{
   margin: auto;
-  
   background-color: rgb(132, 200, 223);
   max-width: 600px;
   padding: 0px;
@@ -51,9 +50,11 @@ body, html {
   display: block;
   justify-self: center;
   margin-right: 15px;
+  visibility: visible;
 }
 .hide-toggle:hover{
-  color: rgb(102, 241, 230)
+  color: rgb(102, 241, 230);
+  cursor: pointer;
 }
 
 
@@ -124,8 +125,11 @@ body, html {
   color: rgb(60, 101, 110);
 }
 #preview-output pre code{
-  display:block
+  display:block;
+  overflow: auto;
 }
+
+
 #preview-output img{
   max-width: 100%;
   max-height: 100%;
